@@ -1,0 +1,26 @@
+/* utility classes */
+.bg_orange {
+    background-color: #fdbb40;
+}
+.bg_pink {
+    background-color: #d33359;
+}
+.bg_lightpink{
+    background-color: #fff5e2;
+}
+.bg_white{
+    background-color: white;
+}
+/* /utility classes */
+
+/* Header */
+#site_header{
+    position: relative;
+}
+#site_header img {
+    height: 180px;
+    position: absolute;
+    top:-20px;
+    right:-35px;
+}
+/* /Header */
