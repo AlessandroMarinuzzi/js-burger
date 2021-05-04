@@ -34,5 +34,49 @@
 /* /Header */
 
 /* Main */
+input[type="text"]{
+    border: 1px solid lightgrey;
+}
+input[type="text"]:focus{
+    background-color: #fff5e2;
+}
 
+#site_main #ingredients .form_group > input[type="checkbox"]{
+    appearance: none;
+}
+.check_box {
+    position: relative;
+    cursor: pointer;
+}
+.check_box:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    background-color: #d33359;
+}
+.check_box:checked:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 15px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -2px;
+    left: 4px;
+}
+
+#discount [type="text"]{
+    width: 350px;
+}
+
+#calculate:hover{
+    background-color: grey;
+    color: #fdbb40;
+}
 /* /Main */

@@ -3,12 +3,12 @@
 // We can nest different arrays within a main array in order to create a list of ingredients.
 // We match each ingredient in position 0 with a price in position 1
 var ingredients = [
-    ["cheese","1"],
-    ["fried-egg","2"],
-    ["mustard","0.50"],
-    ["tomato","0.75"],
-    ["lettuce","0.75"],
-    ["ketchup","0.50"]
+    ["cheese","1","Cheese"],
+    ["fried-egg","2","Egg"],
+    ["mustard","0.50","Mustard"],
+    ["tomato","0.75","Tomato"],
+    ["lettuce","0.75","Lettuce"],
+    ["ketchup","0.50","Ketchup"]
 ];
 console.log(ingredients);
 // Let's create a function that reads the "ingredient-price" association and dynamically inserts the HTML templates into the document.
@@ -22,11 +22,16 @@ function renderInputs (list, el){
         // Then we will name the label in the same way, to make it change in accordance to the number of repetitions within the cycle.
         // Same process for the checkbox. Using the attribute "data-" and the counter in position 1 of the array, we can match the ingredient in position 0 with its own price. 
         `
-        <div class="form-group col-6 my-3 vertical-align-middle">
-            <img class="mr-2" width="50" src="./assets/img/${list[counter][0] + '.svg'}"> 
-            <label for="${list[counter][0]}">${list[counter][0]}</label>
-            <input type="checkbox" name="${list[counter][0]}" id="${list[counter][0]}" data-price="${list[counter][1]}" class="mx-2">
+        <div class="form_group col-6 my-3 d-flex align-items-center">
+
+            <img class="mr-4" width="50" src="./assets/img/${list[counter][0] + '.svg'}">  
+
+            <label class="font-weight-bold align-self-center d-inline-block" for="${list[counter][0]}">${list[counter][2]}</label>
+
+            <input type="checkbox" name="${list[counter][0]}" id="${list[counter][0]}" data-price="${list[counter][1]}" class="check_box mx-4">
+
             <span class="colour_pink">add</span>
+
         </div>
         `
         );
