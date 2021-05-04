@@ -11,6 +11,10 @@
 .bg_white{
     background-color: white;
 }
+
+.text_white{
+    color: white;
+}
 /* /utility classes */
 
 /* Header */
@@ -24,3 +28,7 @@
     right:-35px;
 }
 /* /Header */
+
+/* Main */
+
+/* /Main */

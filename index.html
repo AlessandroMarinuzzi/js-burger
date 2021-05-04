@@ -24,15 +24,40 @@
             <!-- site main -->
             <main id="site_main" class="bg_white">
                 <div class="container">
+
+                    <!-- Input text to name the product -->
+                    <input type="text" value="" placeholder="Name Your Burger" id="burgerName" class="h4 my-4 rounded">
+                    <!-- /Input text to name the product -->
                     
+                    <h4>Ingredients</h4>
+
+                    <!-- Garnishes Section -->
+                    <section id="garnishes">
+
+                    </section>
+                    <!-- /Garnishes Section -->
+
+                    <!-- Input text for the voucher -->
+                    <div id="form_group">
+                        <span>Discount Coupon</span>
+                        <input type="text" value="" placeholder="ABC123456" id="voucher" class="rounded">
+                    </div>
+                    <!-- /Input text for the voucher -->
+
+                    <!-- Button to calculate the price -->
+                    <div class="row d-flex justify-content-center">
+                        <button id="calculate" class="btn bg_orange font-weight-bold my-4">Calculate</button>
+                    </div>
+                    <!-- /Button to calculate the price -->
                 </div>
             </main>
             <!-- /site main -->
             
             <!-- site footer -->
-            <footer id="site_footer bg_pink">
-                <div class="container">
-                    
+            <footer id="site_footer" class="bg_pink text_white py-4">
+                <div class="container d-flex">
+                    <span class="h5 font-weight-bold">Your Price</span>
+                    <span id="burgerPrice" class="h5 font-weight-bold ml-auto">0</span>
                 </div>        
             </footer>
             <!-- /site footer -->    
